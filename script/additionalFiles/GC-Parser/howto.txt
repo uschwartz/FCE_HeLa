@@ -1,0 +1,12 @@
+Usage command line: Parser [Input.wig] [changefile.txt] [output.wig]
+
+
+Generally it's used to modify a wig-file with certain parameters
+
+- input.wig: Wigfile that's the input
+
+- changefile.txt: Changes that are made: format
+	chrom	start	end	normFactor
+	chr20	1	250	0
+	...
+- ouput.wig -> file that is the output
