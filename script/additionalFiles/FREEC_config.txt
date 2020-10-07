@@ -1,0 +1,45 @@
+##parameters chrLenFile and ploidy are required.
+
+chrLenFile = ~/Analysis/FCE_HeLa/data/annotation/ChromInfo.txt
+ploidy = 3
+
+
+##Parameter "breakPointThreshold" specifies the maximal slope of the slope of residual sum of squares. 
+##This should be a positive value. The closer it is to Zero, the more breakpoints will be called. Its recommended value is between 0.01 and 0.08.
+
+breakPointThreshold = 3.
+
+
+##Either coefficientOfVariation or window must be specified for whole genome sequencing data. Set window=0 for exome sequencing data.
+
+window = 500000
+step=50000
+
+##Either chrFiles or GCcontentProfile must be specified too if no control dataset is available. 
+##If you provide a path to chromosome files, Control-FREEC will look for the following fasta files in your directory (in this order): 
+##1, 1.fa, 1.fasta, chr1.fa, chr1.fasta; 2, 2.fa, etc.
+## Please ensure that you don't have other files but sequences having the listed names in this directory. 
+chrFiles = ~/Analysis/FCE_HeLa/data/annotation/fasta/
+
+
+
+outputDir =  ~/Analysis/FCE_HeLa//analysis/03_CNV
+
+
+
+##If the parameter gemMappabilityFile is not specified, then the fraction of non-N nucleotides per window is used as Mappability.
+
+gemMappabilityFile = ~/Analysis/FCE_HeLa/data/annotation/mappability_hg19/out50_hg19.gem
+minMappabilityPerWindow = 0.8
+
+
+
+[sample]
+
+mateFile = ~/Analysis/FCE_HeLa/data/sequencing/input/input_sorted.bam
+
+inputFormat = BAM
+mateOrientation = 0
+
+
+
