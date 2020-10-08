@@ -8,6 +8,9 @@ The nucleosome is the basic packaging unit of DNA forming arrays that are sugges
 ## Content
 Code used to analyze higher order structures of chromatin.  
 
+## Data 
+The raw and processed MNase-seq data is deposited at GEO repository under the accession number GSE100401. 
+
 ## Cite
 If you use the provided code in your research, generally it is appropriate to cite the following paper:
 
