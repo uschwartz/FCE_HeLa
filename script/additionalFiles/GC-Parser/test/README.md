@@ -13,6 +13,7 @@
 + takes a wig file (e. g. DANPOS2 output)
 
 |fixedStep chrom=chr20 start=1 step=10 span=10 |
+|---	|
 |3 |
 |3 |
 |3 |
@@ -27,6 +28,7 @@
 normalized wig file
 
 |fixedStep chrom=chr20 start=1 step=10 span=10 |
+|---	|
 |1 |
 |1 |
 |1 |
